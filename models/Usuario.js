@@ -12,7 +12,6 @@ Usuario.init(
 		password: {
 			type: DT.STRING(50),
 			allowNull: false,
-            
 		},
 		mail: {
 			type: DT.STRING(50),
@@ -22,29 +21,14 @@ Usuario.init(
 			},
 		},
 		telefono: {
-			type: DT.NUMBER,
+			type: DT.INTEGER,
 			allowNull: false,
 			validate: {
 				isInt: true,
 				max: 10,
 			},
 		},
-		libros: {
-			type: DT.ARRAY,
-			allowNull: true,
-		},
-		librosQueridos: {
-			type: DT.ARRAY,
-			allowNull: true,
-		},
-		librosQueQuieren: {
-			type: DT.ARRAY,
-			allowNull: true,
-		},
-		intercambios: {
-			type: DT.ARRAY,
-			allowNull: true,
-		},
+		
 	},
 	{
 		sequelize: connection,

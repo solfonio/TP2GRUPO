@@ -7,15 +7,15 @@ class Intercambio extends Model {}
 Intercambio.init(
 	{
 		miLibro: {
-			type: Libro,
+			type: DT.STRING,
 			allowNull: false,
 		},
 		suLibro: {
-			type: Libro,
+			type: DT.STRING,
 			allowNull: false,
 		},
 		usuarioIntercambiado: {
-			type: Usuario,
+			type: DT.STRING,
 			allowNull: false,
 		},
 	},

@@ -1,4 +1,4 @@
-import { Usuario, Libro, Intercambio } from "../models/relaciones.js";
+// import { Usuario, Libro, Intercambio } from "../models/relaciones.js";
 class IntercambioController {
 	constructor() {}
 	getAllIntercambios = (req, res) => {

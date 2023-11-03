@@ -23,7 +23,7 @@ Libro.init(
 		},
 		imagen: {
 			type: DT.STRING(5000),
-			allowNull: true,
+			
 		},
 		
 	},

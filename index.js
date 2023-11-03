@@ -5,10 +5,11 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(router)
 
 
 
-await connection.sync({ force: false });
+await connection.sync({ force: true });
 
 app.listen(8080, () => {
 	console.log(`🚀 ~ app.listen ~ listen: http://localhost:8080`);

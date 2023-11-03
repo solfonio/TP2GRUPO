@@ -1,4 +1,4 @@
-import { Usuario, Libro,Intercambio } from "../models/relaciones.js";
+ import { Usuario } from "../models/relaciones.js";
 
 class UsuarioController {
 	constructor() {}

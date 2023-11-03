@@ -8,20 +8,20 @@ Usuario.hasMany(Libro,{
 })
 
 Libro.belongsTo(Usuario, {
-	foreignKey: "usuarioId",
+    foreignKey: "usuarioId",
 });
 
-Usuario.hasMany(Intercambio,{
-    foreignKey:"usuarioId"
-})
+// Usuario.hasMany(Intercambio,{
+//     foreignKey:"usuarioId"
+// })
 
-Intercambio.belongsTo(Usuario, {
-	foreignKey: "usuarioId",
-});
+// Intercambio.belongsTo(Usuario, {
+// 	foreignKey: "usuarioId",
+// });
 
-Intercambio.hasMany(Libro,{
-    foreignKey:"intercambioId"
-})
+//  Intercambio.hasMany(Libro,{
+//      foreignKey:"intercambioId"
+//  })
 
 
 export {Libro,Usuario,Intercambio}
