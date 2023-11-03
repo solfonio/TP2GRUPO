@@ -5,7 +5,7 @@ const username = "root";
 const password = ""; //para windows dejar vacio
 const dialect = "mysql";
 const host = "localhost";
-const port = 3306;
+const port = 3307;
 
 const connection = new Sequelize(database, username, password, {
 	host,
